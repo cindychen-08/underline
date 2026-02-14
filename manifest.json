@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "Underline",
+    "version": "1.0.0",
+    "description": "Highlight, annotate, and save text from anywhere on the web with AI-powered insights.",
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "permissions": [
+      "activeTab",
+      "contextMenus",
+      "storage",
+      "identity"
+    ],
+    "host_permissions": [
+      "https://api.cohere.ai/*",
+      "https://docs.googleapis.com/*"
+    ],
+    "oauth2": {
+      "client_id": "1014765961349-01klsgmmq2ebu4snf3b5p7q3m5auco54.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/documents"
+      ]
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    }
+  }
