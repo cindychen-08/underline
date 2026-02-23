@@ -13,9 +13,6 @@ A Chrome extension for highlighting and annotating text from anywhere on the web
 - **Export as Markdown** — Download your highlights as a .md file
 - **Copy as HTML** — Paste directly into blogs or Notion
 
-## Screenshots
-
-![Underline Popup](screenshot.png)
 
 ## Tech Stack
 
@@ -51,5 +48,3 @@ A Chrome extension for highlighting and annotating text from anywhere on the web
 2. **AI analysis:** Select text → Right-click → Choose "Summarize", "Explain", or "Counter-argument"
 3. **View highlights:** Click the extension icon in Chrome toolbar
 4. **Export:** Click "View All" → Choose export format
-
-## File Structure
